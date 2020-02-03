@@ -446,12 +446,14 @@ quast:
     fn: 'report.tsv'
     shared: true
 rna_seqc/metrics:
-    fn: 'metrics.tsv'
+    fn: '*metrics.tsv'
     shared: true
 rna_seqc/coverage:
-    fn_re: 'meanCoverageNorm_(high|medium|low)\.txt'
+    fn: '*coverage*'
+    #meanCoverageNorm_(high|medium|low)\.txt'
 rna_seqc/correlation:
-    fn_re: 'corrMatrix(Pearson|Spearman)\.txt'
+    fn: '*corr*'
+    #Matrix(Pearson|Spearman)\.txt'
 rsem:
     - fn: '*.cnt'
 rseqc/bam_stat:
