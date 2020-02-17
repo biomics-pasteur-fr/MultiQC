@@ -24,7 +24,7 @@ MultiQC was written by Phil Ewels (http://phil.ewels.co.uk) at SciLifeLab Sweden
 from setuptools import setup, find_packages
 import sys
 
-version = '1.8dev'
+version = '1.8.1dev'
 dl_version = 'master' if 'dev' in version else 'v{}'.format(version)
 
 print("""-----------------------------------
@@ -37,7 +37,7 @@ matplotlib_version = '>=2.1.1'
 if sys.version_info[0] == 2:
     matplotlib_version += ',<3.0.0'
 else:
-    matplotlib_version += ',<3.1.0'
+    matplotlib_version += ',<3.1.4'
 
 install_requires = [
         'click',
